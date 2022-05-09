@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color);
+    background-color: var(--bg);
+    text-transform: capitalize;
+}
+:root{
+    --color:white;
+    --bg:#222;
+    --btn-bg:rgb(72, 145, 255);
+    --btn-hover-bg:rgb(109, 161, 239);
+    --btn-light:rgb(102, 102, 102);
+  }
+.contener{
+  margin: auto;
+  max-width: 500px;
+  height:auto;
+  text-align: center;
+  padding: 5%;
+}
+.dark-light-btn{
+  position: absolute;
+  top: 5px;
+  right: 20%;
+  font-size: 20px;
+}
+.contener .img{
+  margin: auto;
+  width: 50%;
+}
+.contener .img img{
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 7px solid var(--btn-bg);
+}
+.contener h1{
+  font-size: 40px;
+  margin-top: 20px;
+}
+.contener .links{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.contener .links a{
+  font-size: 30px;
+  padding: 0 20px 0 20px;
+}
+.contener .dtl,.contener .chat-box{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.contener .dtl div{
+  font-size: 17px;
+  width: 100px;
+  text-align: center;
+  padding: 0 25px 0 25px;
+}
+.contener .chat-box button{
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  background-color: var(--btn-bg);
+  border-radius: 10px;
+  border: none;
+}
+.contener .chat-box button:hover{
+  background-color: var(--btn-hover-bg);
+}
+.contener .chats a,.contener .chat-box button a{
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  text-decoration: none;
+}
+.contener .chat-box #down-cv{
+  font-size: 19px;
+  background-color: transparent;
+  margin: 0 10px 0 10px;
+}
+.contener .chats{
+  width: 100px;
+  margin: 0 0 0 30px;
+}
+.contener .chats i{
+  font-size: 30px;
+  background-color: transparent;
+  padding: 7px;
+}
+.contener .btn{
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  margin: 20px auto;
+  background-color: var(--btn-light);
+  border-radius: 15px;
+}
+.contener .btn button{
+  width: 145px;
+  height: 50px;
+  border: none;
+  margin: 5px;
+  font-size: 18px;
+  background-color: transparent;
+}
+.contener .btn button.active{
+  background-color: var(--btn-hover-bg);
+}
+.contener .projects-box{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contener .projects-box .projects{
+  display: inline-block;
+  width: 42%;
+  height: 160px;
+  border-radius: 15px;
+  margin: 3%;
+  position: relative;
+}
+.projects-box.showprojects{
+  display: inline-block;
+}
+.contener .projects-box .projects a{
+  position: absolute;
+  left: 20px;
+  background-color: transparent;
+  bottom: 15px;
+  display: none;
+  transition: all 0.5 ease;
+}
+.contener .projects-box .projects i{
+  font-size: 25px;
+  background-color: transparent;
+}
+.contener .projects-box #proj-1{
+  background: url("https://i.ibb.co/G032rgN/Screenshot-50.png") 
+  no-repeat center;
+background-size: cover;
+}
+.contener .projects-box #proj-1:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.486),rgba(0, 0, 0, 0.452)),url("https://i.ibb.co/G032rgN/Screenshot-50.png") 
+    no-repeat center;
+    background-size: cover;
+}
+.contener .projects-box #proj-2{
+  background: url("https://i.ibb.co/61b2mb8/Screenshot-49.png") 
+  no-repeat center;
+background-size: cover;
+}
+.contener .projects-box #proj-2:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.486),rgba(0, 0, 0, 0.452)),url("https://i.ibb.co/61b2mb8/Screenshot-49.png") 
+    no-repeat center;
+    background-size: cover;
+}
+.contener .projects-box .projects:hover.projects a{
+  display: block;
+}
+/* ======================= Skills ====================== */
+
+.contener .skills-box{
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: none;
+  
+}
+.skills-box.showskills{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.contener .skills-box .front-end h1,.contener .skills-box .back-end h1{
+  font-size: 16px;
+}
+.contener .front-end,.contener .back-end{
+  display: flex;
+  width: 40%;
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.contener .front-end .f-skills,.contener .back-end .b-skills{
+  display: inline-block;
+  margin: 15px;
+}
+.contener .front-end i,.contener .back-end i{
+  font-size: 20px;
+  padding: 0 10px 0 10px;
+}
+.contener .front-end h3,.contener .back-end h3{
+  font-size: 15px;
+}
+.contener .front-end p,.contener .back-end p{
+  font-size: 12px;
+}
+
+/* ============================== Madia Quariy ============================================ */
+@media (max-width:500px) {
+  
+}
+.contener .img{
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+.contener .img img{
+  width: 140px;
+  height: 140px;
+}
